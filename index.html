@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modern Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="default">
+
+    <!-- 🌦️ Weather Effects Layer (NEW) -->
+    <div id="weatherEffects"></div>
+
+    <!-- ✨ Particle Background -->
+    <div id="particles"></div>
+
+    <!-- 💎 Glass Container -->
+    <div class="container">
+
+        <div class="top-bar">
+            <h1>Weather App</h1>
+            <button id="themeToggle">🌙</button>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div id="loader" class="loader hidden"></div>
+
+        <div id="weatherResult" class="weather-card hidden">
+            <h2 id="cityName"></h2>
+            <img id="weatherIcon" src="" alt="">
+            <p id="temperature"></p>
+            <p id="condition"></p>
+
+            <div class="extra-info">
+                <p id="humidity"></p>
+                <p id="wind"></p>
+            </div>
+        </div>
+
+        <div id="forecast" class="forecast hidden"></div>
+
+        <p id="errorMsg" class="error hidden"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
